@@ -59,8 +59,8 @@ function Chat() {
   // Toggle emoji picker for specific sender
   const togglePicker = (currentSender) => {
     setShowPicker((prev) => ({
-      Person1: currentSender === "Person 1" ? !prev.Person1 : false,
-      Person2: currentSender === "Person 2" ? !prev.Person2 : false,
+      ...prev,
+      [currentSender]: !prev[currentSender],
     }));
   };
   
