@@ -143,3 +143,28 @@ body {
 .send-button:hover {
   background-color: #1ebe5d;
 }
+
+
+.emoji-picker {
+  position: absolute;
+  bottom: 60px; /* Moves picker above input */
+  left: 20px;
+  z-index: 1000;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.emoji-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.chat-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
